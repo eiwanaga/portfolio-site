@@ -210,6 +210,14 @@ main {
     color: rgba(0, 0, 0, 1);
   }
 
+  .contact {
+    position: center;
+    font-size: 6em;
+    color: rgba(75, 0, 50);
+    text-transform: uppercase;
+  }
+  
+
 /* SITE NAV */
 
 .site-navigation ul {
@@ -267,6 +275,52 @@ main {
 /* ABOUT PAGE */
 .about {
   background-color: rgba(200, 200, 200, 1);
+}
+
+/* CONTACT PAGE */
+
+form {
+  max-width: 600px;
+  background:  rgb(168, 0, 112);
+  padding: 2em 3em 2em 3em;
+  color: rgb(255, 219, 242);
+  line-height: 2.5em;
+}
+
+label,
+input,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1em;
+}
+
+label {
+  margin-top: 1.5em;
+  margin-bottom: .25em;
+}
+
+input[type="text"],
+textarea {
+  border: 1px solid #ccc;
+  padding: .5em;
+  color: #667;
+  font-size: 1em;
+  background: #eee;
+  color: #444;
+  font-size: inherit;
+}
+
+textarea {
+  min-height: 10em;
+  line-height:1.5;
+
+}
+
+input[type="submit"] {
+  margin-top: 1.5em;
+  width: auto;
+  font-size: inherit;
 }
 
 /* PROJECT PAGES */
