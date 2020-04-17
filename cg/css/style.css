@@ -31,7 +31,7 @@ body { margin: 0; }
 
 /* GLOBAL COLORS */
 body {
-    background-color: rgba(221,221,221,1);
+    background-color: rgb(255, 255, 255)
     color: rgba(0,0,0,.8);
 }
 
@@ -172,34 +172,33 @@ main {
 /* SITE NAV */
 
 .site-navigation ul {
-    padding: 0;
-    margin: 1em 1.5em 0 0;
-  }
-  
-  .site-navigation ul li {
-    display: inline-block;
-  }
-  
-  .site-navigation ul li a {
-    display: block;
-    padding: 1em 0.5em;
-    margin: 0 .2em;
-    color: rgba(0, 0, 0, 0.5);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    border-bottom: 2px solid rgba(0, 0, 0, 0);
-    transition: .2s ease-out all;
-  }
-  
-  .site-navigation ul li a:hover {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-    color: rgba(0, 0, 0, 1);
-  }
-  
-  .site-navigation ul li a.selected {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
-  }
+  padding: 0;
+  margin: 1em 1.5em 0 0;
+}
 
+.site-navigation ul li {
+  display: inline-block;
+}
+
+.site-navigation ul li a {
+  display: block;
+  padding: 1em 0.5em;
+  margin: 0 .2em;
+  color: rgb(168, 0, 112);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: .2s ease-out all;
+}
+
+.site-navigation ul li a:hover {
+  border-bottom: 2px solid rgb(255, 218, 243);
+  color: rgb(255, 218, 243);
+}
+
+.site-navigation ul li a.selected {
+  border-bottom: 2px solid rgb(255, 149, 220);
+}
     /* FEATURED PROJECTS ON HOME PAGE */
 @media (min-width: 768px) {
 

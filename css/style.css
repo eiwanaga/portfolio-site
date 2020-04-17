@@ -88,17 +88,36 @@ img.circular {
 
 
 /* BUTTONS */
-.button {
+/* .button {
+    font-family: 'Unna', serif;
     display: inline-block;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    color: rgba(75, 0, 50);
+    border: 1px solid rgba(255, 255, 255);
     border-radius: 3em;
     padding: 1em 2em;
-    margin: .5em;
+    margin: 1em;
 }
 .button:hover {
-    background: rgba(75, 0, 50);
+    background-color: rgb(49, 0, 33);
     color: rgba(255,255,255,1);
-    border-color: rgba(75, 0, 50);
+    border-color: rgb(255, 255, 255);
+} */
+
+.button {
+  font-family: 'Nanum Gothic', sans-serif;
+  display: inline-block;
+  border-radius: 2em;
+  padding: 1em 2em;
+  margin: 1em;
+  border: 1px solid rgba(75, 0, 50);
+  color: rgba(75, 0, 50);
+  /*color: rgba(0, 51, 102, 1); */
+  /* transition: all .4s ease-out; */
+}
+
+.button:hover {
+  background: rgba(75, 0, 50);
+  color: rgba(255, 255, 255, 1);
 }
 
 /* BESPOKE LAYOUT STRUCTURE */
@@ -138,14 +157,14 @@ main {
 }
 
 /* HERO */
-.hero {
+/* .hero {
   text-align: center;
   background-image: url('../img/color-tiles.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   padding: 6em 1em;
   margin: 2em 0;
-}
+} */
 
 
 /* BESPOKE GRID SYSTEM */
@@ -198,7 +217,7 @@ main {
   }
   
   .site-header h1 a {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgb(168, 0, 112);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     padding: 1em;
@@ -210,8 +229,25 @@ main {
     color: rgba(0, 0, 0, 1);
   }
 
+  .work {
+    position: center;
+    text-align: center;
+    font-size: 6em;
+    color: rgba(75, 0, 50);
+    text-transform: uppercase;
+  }
+
+  .about {
+    position: center;
+    text-align: center;
+    font-size: 6em;
+    color: rgba(75, 0, 50);
+    text-transform: uppercase;
+  }
+
   .contact {
     position: center;
+    text-align: center;
     font-size: 6em;
     color: rgba(75, 0, 50);
     text-transform: uppercase;
@@ -233,7 +269,7 @@ main {
     display: block;
     padding: 1em 0.5em;
     margin: 0 .2em;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgb(168, 0, 112);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     border-bottom: 2px solid rgba(0, 0, 0, 0);
@@ -241,12 +277,12 @@ main {
   }
   
   .site-navigation ul li a:hover {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-    color: rgba(0, 0, 0, 1);
+    border-bottom: 2px solid rgb(255, 218, 243);
+    color: rgb(255, 218, 243);
   }
   
   .site-navigation ul li a.selected {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgb(255, 149, 220);
   }
 
     /* FEATURED PROJECTS ON HOME PAGE */
@@ -283,7 +319,7 @@ form {
   max-width: 600px;
   background:  rgb(168, 0, 112);
   padding: 2em 3em 2em 3em;
-  color: rgb(255, 219, 242);
+  color: rgb(255, 244, 251);
   line-height: 2.5em;
 }
 
