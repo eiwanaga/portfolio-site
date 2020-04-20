@@ -86,23 +86,6 @@ img.circular {
     margin-right: auto;
 }
 
-
-/* BUTTONS */
-/* .button {
-    font-family: 'Unna', serif;
-    display: inline-block;
-    color: rgba(75, 0, 50);
-    border: 1px solid rgba(255, 255, 255);
-    border-radius: 3em;
-    padding: 1em 2em;
-    margin: 1em;
-}
-.button:hover {
-    background-color: rgb(49, 0, 33);
-    color: rgba(255,255,255,1);
-    border-color: rgb(255, 255, 255);
-} */
-
 .button {
   font-family: 'Nanum Gothic', sans-serif;
   display: inline-block;
@@ -257,33 +240,83 @@ main {
 /* SITE NAV */
 
 .site-navigation ul {
-    padding: 0;
-    margin: 1em 1.5em 0 0;
-  }
-  
-  .site-navigation ul li {
-    display: inline-block;
-  }
-  
-  .site-navigation ul li a {
-    display: block;
-    padding: 1em 0.5em;
-    margin: 0 .2em;
-    color: rgb(168, 0, 112);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    border-bottom: 2px solid rgba(0, 0, 0, 0);
-    transition: .2s ease-out all;
-  }
-  
-  .site-navigation ul li a:hover {
-    border-bottom: 2px solid rgb(255, 218, 243);
-    color: rgb(255, 218, 243);
-  }
-  
-  .site-navigation ul li a.selected {
-    border-bottom: 2px solid rgb(255, 149, 220);
-  }
+  padding: 0;
+  margin: 1em 1.5em 0 0;
+}
+
+.site-navigation ul li {
+  display: inline-block;
+}
+
+.site-navigation ul li a {
+  display: block;
+  padding: 1em 0.5em;
+  margin: 0 .2em;
+  color: rgb(168, 0, 112);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: .2s ease-out all;
+}
+
+.site-navigation ul li a:hover {
+  border-bottom: 2px solid rgb(255, 218, 243);
+  color: rgb(255, 218, 243);
+}
+
+.site-navigation ul li a.selected {
+  border-bottom: 2px solid rgb(255, 149, 220);
+}
+
+section {
+  padding: 3em 0;
+  display: -ms-grid;
+  display: grid;}
+  /* place-items: center; } */
+
+.hero {
+  text-align: center; 
+  margin-top: -2em;}
+
+.hero p {
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.hero .one-third {
+  padding-right: 2em;
+}
+
+.hero .two-thirds {
+  margin: 0;
+}
+
+.hero .row{
+  margin-top:1em; 
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  margin: 0;
+}
+
+.hero h1 {
+  font-family: 'Unna', serif;
+  text-align: center; 
+  font-size: 4em;
+}
+
+.hero h2 {
+  font-family: 'Nanum Gothic', sans-serif;
+  color: rgb(168, 0, 112);
+  font-size: 2em;
+  padding-top: -3em;
+}
+
+.hero p {
+  font-family: 'Signika', sans-serif;
+  max-width: 30em;
+  padding-bottom: 10em;
+}
 
     /* FEATURED PROJECTS ON HOME PAGE */
 @media (min-width: 768px) {

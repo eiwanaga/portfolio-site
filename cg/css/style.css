@@ -40,10 +40,10 @@ a:hover { color: rgba(0, 0, 0, 1); }
 
 /* GLOBAL TYPOGRAPHY */
 body {
-    font-family: "Rubik", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    font-size: 87.5%; /* 14px */
-    line-height: 1.4;
+  font-family: 'Unna', serif;
+  font-weight: 400;
+  font-size: .9em;
+  line-height: 1.4;
 }
 h1,h2,h3 { font-weight: normal; }
 p { max-width: 35em; }
@@ -69,7 +69,7 @@ a { text-decoration: none;}
     font-weight: 300;
     line-height: 1;
     margin: 0 0 .6em 0;
-    color: rgba(0,0,0,.5); 
+    color: rgb(168, 0, 112); 
 }
 
 /* MEDIA */
@@ -86,18 +86,21 @@ img.circular {
 
 /* BUTTONS */
 .button {
-    display: inline-block;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 3em;
-    padding: 1em 2em;
-    margin: .5em;
-}
-.button:hover {
-    background: rgba(0, 0, 0, 1);
-    color: rgba(255,255,255,1);
-    border-color: rgba(0, 0, 0, 1);
+  font-family: 'Nanum Gothic', sans-serif;
+  display: inline-block;
+  border-radius: 2em;
+  padding: 1em 2em;
+  margin: 1em;
+  border: 1px solid rgba(75, 0, 50);
+  color: rgba(75, 0, 50);
+  /*color: rgba(0, 51, 102, 1); */
+  /* transition: all .4s ease-out; */
 }
 
+.button:hover {
+  background: rgba(75, 0, 50);
+  color: rgba(255, 255, 255, 1);
+}
 /* BESPOKE LAYOUT STRUCTURE */
 
 body {
@@ -117,6 +120,61 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+/* GRID */
+
+/* Default (Small+ Screen Sizes) */
+
+* {box-sizing: border-box;}
+
+.row .column {
+  margin-bottom: 2%;
+}
+
+.row .column .one-half {
+  padding: 1em;
+}
+
+/* Medium Grid (on MEDIUM+ Screen Sizes) */
+@media (min-width: 768px) {
+
+  .row {
+      display: flex;
+      justify-content: center;
+      margin-left: -1%;
+      margin-right: -1%;
+      justify-content: center;
+  }
+  
+  .row .column {
+      flex-grow: 1;
+      margin-left: 1%;
+      margin-right: 1%;
+  }
+  
+  .column.centered {
+      flex-grow: 0;
+  }
+
+  .one-half.column { 
+      width: 48%; 
+  }
+  
+  .one-third.column { 
+      width: 31.3333% 
+  }
+
+  .one-forth.column { 
+      width: 23% 
+  }
+
+  .two-thirds {
+    width: 64.6666%; 
+  }
+
+  .three-fourths {
+    width: 73%; 
+  }
 
   /* MAIN CONTENT */
   
@@ -157,7 +215,7 @@ main {
   }
   
   .site-header h1 a {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgb(168, 0, 112);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     padding: 1em;
@@ -199,33 +257,120 @@ main {
 .site-navigation ul li a.selected {
   border-bottom: 2px solid rgb(255, 149, 220);
 }
-    /* FEATURED PROJECTS ON HOME PAGE */
-@media (min-width: 768px) {
 
-  .featuredproject {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .featuredproject.swapped {
-    flex-direction: row-reverse;
-  }
-  .featuredproject .image-wrapper {
-    width: 49%;
-  }
-  .featuredproject .text-wrapper {
-    width: 49%;
-    padding: 3em;
-  }
+section {
+  padding: 3em 0;
+  display: -ms-grid;
+  display: grid;}
+  /* place-items: center; } */
 
+.hero {
+  text-align: center; 
+  margin-top: -2em;
 }
 
-/* ABOUT PAGE */
-body.about {
-  background-color: rgb(200, 200, 200);
+.hero img {
+  max-width: 80%;
+  height: auto;
 }
+
+.hero p {
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.hero .one-third {
+  padding-right: 2em;
+}
+
+.hero .two-thirds {
+  margin: 0;
+}
+
+.hero .row{
+  margin-top:1em; 
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  margin: 0;
+}
+
+.hero h1 {
+  font-family: 'Unna', serif;
+  text-align: center; 
+  font-size: 4em;
+}
+
+.hero h2 {
+  font-family: 'Nanum Gothic', sans-serif;
+  color: rgb(168, 0, 112);
+  font-size: 2em;
+  padding-top: -3em;
+}
+
+.hero p {
+  font-family: 'Signika', sans-serif;
+  max-width: 30em;
+  padding-bottom: 10em;
+}
+
+.process {
+  max-width: 50%;
+  height: auto;
+}
+
+.process h3 {
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  color: rgb(168, 0, 112);
+}
+
+.process h2 {
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  color: rgb(168, 0, 112);
+  font-size: 2em;
+}
+
+.drafts h2 {
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  color: rgb(168, 0, 112);
+  font-size: 2em;
+}
+
+.drafts h3 {
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  color: rgb(168, 0, 112);
+}
+
+.drafts p {
+  font-family: 'Signika', sans-serif;
+  padding-left: 2em;
+  max-width: 30em;
+}
+
+.statement {
+  text-align: center;
+}
+
+.statement h2 {
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  color: rgb(168, 0, 112);
+  font-size: 2em;
+  padding-top: 3em;
+  padding-bottom: 2em;
+}
+
+.statement p {
+  font-family: 'Signika', sans-serif;
+  padding-top: 2em;
+  text-align: left;
+  max-width: 35em;
+}
+
 
 /* ANIMATION */
 @keyframes slide-in {
