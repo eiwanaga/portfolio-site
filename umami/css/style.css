@@ -308,51 +308,18 @@ section {
   padding-bottom: 10em;
 }
 
-.process h2 {
+.pages h2 {
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
   color: rgb(168, 0, 112);
   font-size: 2em;
 }
 
-.drafts h2 {
-  font-family: 'Nanum Gothic', sans-serif;
-  text-align: center;
-  color: rgb(168, 0, 112);
-  font-size: 2em;
-}
-
-.drafts h3 {
+.pages h3 {
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
   color: rgb(168, 0, 112);
 }
-.drafts p {
-  font-family: 'Signika', sans-serif;
-  padding-left: 2em;
-  max-width: 30em;
-}
-
-.statement {
-  text-align: center;
-}
-
-.statement h2 {
-  font-family: 'Nanum Gothic', sans-serif;
-  text-align: center;
-  color: rgb(168, 0, 112);
-  font-size: 2em;
-  padding-top: 3em;
-  padding-bottom: 2em;
-}
-
-.statement p {
-  font-family: 'Signika', sans-serif;
-  padding-top: 2em;
-  text-align: left;
-  max-width: 35em;
-}
-
 
 /* ANIMATION */
 @keyframes slide-in {

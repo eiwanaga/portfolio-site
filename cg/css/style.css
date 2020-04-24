@@ -337,6 +337,7 @@ section {
   text-align: center;
   color: rgb(168, 0, 112);
   font-size: 2em;
+  padding-top: 4em;
 }
 
 .drafts h3 {
@@ -351,24 +352,20 @@ section {
   max-width: 30em;
 }
 
-.statement {
-  text-align: center;
-}
-
-.statement h2 {
+.site-map h2 {
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
   color: rgb(168, 0, 112);
   font-size: 2em;
-  padding-top: 3em;
-  padding-bottom: 2em;
+  padding-top: 4em;
 }
 
-.statement p {
-  font-family: 'Signika', sans-serif;
+.style-tile h2 {
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  color: rgb(168, 0, 112);
+  font-size: 2em;
   padding-top: 2em;
-  text-align: left;
-  max-width: 35em;
 }
 
 
