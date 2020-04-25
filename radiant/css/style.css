@@ -299,60 +299,57 @@ section {
   font-family: 'Nanum Gothic', sans-serif;
   color: rgb(168, 0, 112);
   font-size: 2em;
-  padding-top: -3em;
 }
 
 .hero p {
   font-family: 'Signika', sans-serif;
   max-width: 30em;
-  padding-bottom: 10em;
 }
 
-.process h2 {
+.catalog h2 {
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
   color: rgb(168, 0, 112);
   font-size: 2em;
+  padding-top: 5em;
 }
 
-.drafts h2 {
+.catalog h3 {
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  color: rgb(168, 0, 112);
+  text-align: center;
+}
+
+.packaging h2 {
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
   color: rgb(168, 0, 112);
   font-size: 2em;
+  padding-top: 5em;
 }
 
-.drafts h3 {
+.packaging h3 {
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
   color: rgb(168, 0, 112);
-}
-.drafts p {
-  font-family: 'Signika', sans-serif;
-  padding-left: 2em;
-  max-width: 30em;
-}
-
-.statement {
   text-align: center;
 }
 
-.statement h2 {
+.assets h2 {
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
   color: rgb(168, 0, 112);
   font-size: 2em;
+  padding-top: 5em;
+}
+
+.assets h3 {
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  color: rgb(168, 0, 112);
   padding-top: 3em;
-  padding-bottom: 2em;
 }
-
-.statement p {
-  font-family: 'Signika', sans-serif;
-  padding-top: 2em;
-  text-align: left;
-  max-width: 35em;
-}
-
 
 /* ANIMATION */
 @keyframes slide-in {
