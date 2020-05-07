@@ -181,6 +181,7 @@ main {
 
 .site-header,
   .site-footer {
+    font-family: 'Nanum Gothic', sans-serif;
     text-align: center;
     margin: 1em 0;
     padding-bottom: 1em;
@@ -200,7 +201,7 @@ main {
   }
   
   .site-header h1 a {
-    color: rgb(168, 0, 112);
+    color: rgb(87, 85, 0);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     padding: 1em;
@@ -212,11 +213,19 @@ main {
     color: rgba(0, 0, 0, 1);
   }
 
+  .work-gallery {
+    position: center;
+    text-align: center;
+    font-size: 6em;
+    color: rgb(87, 85, 0);
+    text-transform: uppercase;
+  }
+
   .work {
     position: center;
     text-align: center;
     font-size: 6em;
-    color: rgba(75, 0, 50);
+    color: rgb(87, 85, 0);
     text-transform: uppercase;
   }
 
@@ -224,7 +233,7 @@ main {
     position: center;
     text-align: center;
     font-size: 6em;
-    color: rgba(75, 0, 50);
+    color: rgb(87, 85, 0);
     text-transform: uppercase;
   }
 
@@ -232,7 +241,7 @@ main {
     position: center;
     text-align: center;
     font-size: 6em;
-    color: rgba(75, 0, 50);
+    color: rgb(87, 85, 0);
     text-transform: uppercase;
   }
   
@@ -252,7 +261,7 @@ main {
   display: block;
   padding: 1em 0.5em;
   margin: 0 .2em;
-  color: rgb(168, 0, 112);
+  color: rgb(87, 85, 0);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
@@ -260,12 +269,12 @@ main {
 }
 
 .site-navigation ul li a:hover {
-  border-bottom: 2px solid rgb(255, 218, 243);
-  color: rgb(255, 218, 243);
+  border-bottom: 2px solid rgb(119, 117, 0);
+  color: rgb(158, 155, 0);
 }
 
 .site-navigation ul li a.selected {
-  border-bottom: 2px solid rgb(255, 149, 220);
+  border-bottom: 2px solid rgb(87, 85, 0);
 }
 
 section {
@@ -274,9 +283,16 @@ section {
   display: grid;}
   /* place-items: center; } */
 
+/* HERO */
+
 .hero {
-  text-align: center; 
-  margin-top: -2em;}
+  background-size: cover;
+  padding: 6em 1em;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center; 
+}
 
 .hero p {
   margin-left: auto;
@@ -307,7 +323,7 @@ section {
 
 .hero h2 {
   font-family: 'Nanum Gothic', sans-serif;
-  color: rgb(168, 0, 112);
+  color: rgb(95, 86, 0);
   font-size: 2em;
   padding-top: -3em;
 }
@@ -316,6 +332,10 @@ section {
   font-family: 'Signika', sans-serif;
   max-width: 30em;
   padding-bottom: 10em;
+}
+
+body {
+  margin: 0;
 }
 
     /* FEATURED PROJECTS ON HOME PAGE */
@@ -339,6 +359,64 @@ section {
     padding: 3em;
   }
 
+}
+
+/* GALLERY */
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-content: start;
+  max-width: 700px;
+  margin: 0 auto;
+  transition: all 150ms linear;
+}
+
+.gallery input[type="radio"] {
+  display: none;
+}
+
+.gallery label {
+  position: relative;
+  display: block;
+  padding-bottom: 60%;
+  margin: 5px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.gallery label:before {
+  border: 1px solid #e3e3e3;
+  content: '';
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  top: -5px;
+}
+
+.gallery img {
+  display: none;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  width: 100%;
+  transition: all 150ms linear;
+}
+
+.gallery input[name="select"]:checked + label + img {
+  display: block;
+}
+
+.gallery input[name="select"]:checked + label:before {
+  border: 1px solid #000;
 }
 
 /* ABOUT PAGE */
