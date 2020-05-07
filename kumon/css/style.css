@@ -300,7 +300,13 @@ section {
 
 .hero {
   text-align: center; 
-  margin-top: -2em;}
+  margin-top: -2em;
+}
+
+.hero img {
+  max-width: 50%;
+}
+
 
 .hero p {
   margin-right: auto; 
@@ -359,7 +365,7 @@ section {
   text-align: center;
   color: rgb(90, 0, 35);
   font-size: 2em;
-  padding-top: 6em;
+  padding-top: 2em;
 }
 
 .final3 h2 {

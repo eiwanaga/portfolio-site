@@ -300,7 +300,12 @@ section {
 
 .hero {
   text-align: center; 
-  margin-top: -2em;}
+  margin-top: -2em;
+}
+
+.hero img {
+  max-width: 60%;
+  }
 
 .hero p {
   margin-right: auto; 

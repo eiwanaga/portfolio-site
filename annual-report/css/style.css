@@ -91,14 +91,14 @@ img.circular {
   border-radius: 2em;
   padding: 1em 2em;
   margin: 1em;
-  border: 1px solid rgba(75, 0, 50);
-  color: rgba(75, 0, 50);
+  border: 1px solid rgb(90, 0, 35);
+  color: rgb(90, 0, 35);
   /*color: rgba(0, 51, 102, 1); */
   /* transition: all .4s ease-out; */
 }
 
 .button:hover {
-  background: rgba(75, 0, 50);
+  background: rgb(59, 0, 23);
   color: rgba(255, 255, 255, 1);
 }
 /* BESPOKE LAYOUT STRUCTURE */
@@ -303,6 +303,10 @@ section {
   margin-top: -2em;
 }
 
+.hero img {
+max-width: 75%;
+}
+
 .hero p {
   margin-right: auto; 
 }
@@ -331,7 +335,7 @@ section {
 
 .hero h2 {
   font-family: 'Nanum Gothic', sans-serif;
-  color: rgb(168, 0, 112);
+  color: rgb(90, 0, 35);
   font-size: 2em;
   padding-top: -3em;
 }
@@ -345,21 +349,24 @@ section {
 .process h2 {
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
-  color: rgb(168, 0, 112);
+  color: rgb(90, 0, 35);
   font-size: 2em;
+  padding-bottom: 1em;
 }
 
 .drafts h2 {
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
-  color: rgb(168, 0, 112);
+  color: rgb(90, 0, 35);
   font-size: 2em;
+  padding-top: 3em;
+  padding-bottom: 1em;
 }
 
 .drafts h3 {
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
-  color: rgb(168, 0, 112);
+  color: rgb(90, 0, 35);
 }
 .drafts p {
   font-family: 'Signika', sans-serif;
@@ -374,7 +381,7 @@ section {
 .statement h2 {
   font-family: 'Nanum Gothic', sans-serif;
   text-align: center;
-  color: rgb(168, 0, 112);
+  color: rgb(90, 0, 35);
   font-size: 2em;
   padding-top: 3em;
   padding-bottom: 2em;
