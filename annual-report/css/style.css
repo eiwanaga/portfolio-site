@@ -394,7 +394,6 @@ max-width: 75%;
   max-width: 35em;
 }
 
-
 /* ANIMATION */
 @keyframes slide-in {
   from { transform:translate(0,-20px); opacity: 0; }

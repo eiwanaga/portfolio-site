@@ -33,7 +33,6 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../work.html" class="selected">Work</a></li>
                 <li><a href="../about.html">About</a></li>
-                <li><a href="../contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -42,7 +41,25 @@
         <div class="container">
             <div class="hero">
                 <h1>Annual Report</h1>
-                    <img src="../img/annual-report_mockup_1.jpg" alt="1">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade" style="display: block;">
+                      <img src="../img/annual-report-cover.jpg">
+                    </div>
+                  
+                    <div class="mySlides fade">
+                        <img src="../img/annual-report-fullcover.jpg">
+                    </div>
+                  
+                </div>
+            
+                  <br>
+                  
+                  <div style="text-align:center">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>
 
                 <div class="row">
                     <div class="one-third">
@@ -115,10 +132,12 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../work.html">Work</a></li>
                 <li><a href="../about.html">About</a></li>
-                <li><a href="../contact.html">Contact</a></li>
             </ul>
         </nav>
     </footer>
+
+<!-- MAIN JS -->
+<script src="js/script.js"></script>
 
 </body>
 
