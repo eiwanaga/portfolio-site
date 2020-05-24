@@ -216,7 +216,7 @@ main {
   }
   
   .site-header h1 a {
-    color: rgb(87, 85, 0);
+    color: rgb(193, 161, 92);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     padding: 1em;
@@ -276,7 +276,7 @@ main {
   display: block;
   padding: 1em 0.5em;
   margin: 0 .2em;
-  color: rgb(87, 85, 0);
+  color: rgb(193, 161, 92);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
@@ -284,12 +284,12 @@ main {
 }
 
 .site-navigation ul li a:hover {
-  border-bottom: 2px solid rgb(119, 117, 0);
-  color: rgb(158, 155, 0);
+  border-bottom: 2px solid rgb(248, 232, 199);
+  color: rgb(193, 161, 92);
 }
 
 .site-navigation ul li a.selected {
-  border-bottom: 2px solid rgb(87, 85, 0);
+  border-bottom: 2px solid rgb(241, 216, 160);
 }
 
 section {
@@ -297,6 +297,9 @@ section {
   display: -ms-grid;
   display: grid;}
   /* place-items: center; } */
+
+
+/* HERO */
 
 .hero {
   text-align: center; 

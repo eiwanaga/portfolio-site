@@ -58,3 +58,11 @@ function showSlides() {
 
 
 //  showSlidesCurrent(slideIndexCurrent);
+
+
+  /* HOVER GALLERY */
+  $("figure").mouseleave(
+    function() {
+      $(this).removeClass("hover");
+    }
+  );
