@@ -41,34 +41,65 @@
         <div class="container">
             <div class="hero">
                 <h1>Umami</h1>
-                    <img src="../img/umami_1.jpg" alt="1">
-
-                <div class="row">
-                    <div class="one-third">
-                        <h2>OBJECTIVE</h2>
-                        <p>Design the layout for a magazine publication.
-                        </p>     
+                <div class="slideshow-container">
+                    <div class="mySlides fade" style="display: block;">
+                      <img src="../img/umami_1.jpg">
+                    </div>
+                  
+                    <div class="mySlides fade">
+                        <img src="../img/umami_2-3.jpg">
                     </div>
 
-                    <div class="two-thirds">
-                        <h2>RESULTS</h2>
-                        <p> Umami is a magazine that features Asian food, news, and recipes.
-                             The layout for the magazine includes a cover, table of contents, and an article.
-                        </p>
+                    <div class="mySlides fade">
+                        <img src="../img/umami_4-5.jpg">
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <a class="button" href="../img/umami.pdf">VIEW PDF</a>   
+            
+                  <br>
+                  
+                  <div style="text-align:center">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>
+
+                    <div class="row">
+                        <div class="one-third column">
+                            <h2>OBJECTIVE</h2>
+                            <p>Design the layout for a magazine publication.
+                            </p>     
+                        </div>
+    
+                        <div class="one-half">
+                            <h2>RESULTS</h2>
+                            <p>Umami is a magazine that features Asian food, news, and recipes.
+                                The layout for the magazine includes a cover, table of contents, and an article.
+                            </p>
+                        </div>
+                    </div>
+                <div class="row">
+                    <a class="button" href="../img/umami.pdf">VIEW PDF</a>   
+                </div>
             </div>
         </div>
 
         <section class="typography">
             <div class="container">
-                <h1>TYPOGRAPHY</h1>
+                <h2>TYPOGRAPHY</h2>
                     <div class="row">
                         <img src="../img/umami-typography.jpg" alt="design">   
                     </div>
+            </div>
+        </section>
+
+        <section class="photos">
+            <div class="container">
+                <h2>PHOTOGRAPHY</h2>
+                <div class="row">
+                    <div class="one-third column">
+                        <img src="../img/umami-photography.jpg" alt="design">   
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -105,5 +136,8 @@
     </footer>
 
 </body>
+
+<!-- MAIN JS -->
+<script src="js/script.js"></script>
 
 </html>

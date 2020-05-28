@@ -45,8 +45,14 @@ body {
   font-size: .9em;
   line-height: 1.4;
 }
-h1,h2,h3 { font-weight: normal; }
-p { max-width: 35em; }
+h1,h2,h3 { 
+  font-weight: normal; 
+}
+
+p { 
+  max-width: 35em; 
+  font-size: 1.2em;
+}
 
 @media (min-width: 768px) {
   p.two-col {
@@ -63,13 +69,14 @@ a { text-decoration: none;}
     font-weight: 400;
     line-height: 1;
     margin: 0 0 .4em 0;
+    color: rgb(183, 76, 70);
 }
 .subheadline {
     font-size: 2em;
     font-weight: 300;
     line-height: 1;
     margin: 0 0 .6em 0;
-    color: rgb(90, 0, 35);
+    color: rgb(213, 108, 85);
 }
 
 /* MEDIA */
@@ -86,21 +93,22 @@ img.circular {
 
 /* BUTTONS */
 .button {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: laca, sans-serif;
   display: inline-block;
   border-radius: 2em;
   padding: 1em 2em;
   margin: 1em;
-  border: 1px solid rgb(90, 0, 35);
-  color: rgb(90, 0, 35);
+  border: 1px solid rgb(193, 161, 92);
+  color: rgb(193, 161, 92);
   /*color: rgba(0, 51, 102, 1); */
   /* transition: all .4s ease-out; */
 }
 
 .button:hover {
-  background: rgb(59, 0, 23);
+  background: rgb(179, 139, 54);
   color: rgba(255, 255, 255, 1);
 }
+
 /* BESPOKE LAYOUT STRUCTURE */
 
 body {
@@ -178,7 +186,7 @@ main {
 
   /* MAIN CONTENT */
   
-  main { padding: 5em 0; }
+  main { padding: 6em 0; }
   section {
     padding: 2em;
     min-height: 90vh;
@@ -196,7 +204,7 @@ main {
 
 .site-header,
   .site-footer {
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: laca, sans-serif;
     text-align: center;
     margin: 1em 0;
     padding-bottom: 1em;
@@ -216,7 +224,7 @@ main {
   }
   
   .site-header h1 a {
-    color: rgb(87, 85, 0);
+    color: rgb(193, 161, 92);
     text-transform: uppercase;
     letter-spacing: 0.1em;
     padding: 1em;
@@ -227,39 +235,6 @@ main {
   .site-header h1 a:hover {
     color: rgba(0, 0, 0, 1);
   }
-
-  .work-gallery {
-    position: center;
-    text-align: center;
-    font-size: 6em;
-    color: rgb(87, 85, 0);
-    text-transform: uppercase;
-  }
-
-  .work {
-    position: center;
-    text-align: center;
-    font-size: 6em;
-    color: rgb(87, 85, 0);
-    text-transform: uppercase;
-  }
-
-  .about {
-    position: center;
-    text-align: center;
-    font-size: 6em;
-    color: rgb(87, 85, 0);
-    text-transform: uppercase;
-  }
-
-  .contact {
-    position: center;
-    text-align: center;
-    font-size: 6em;
-    color: rgb(87, 85, 0);
-    text-transform: uppercase;
-  }
-  
 
 /* SITE NAV */
 
@@ -276,7 +251,7 @@ main {
   display: block;
   padding: 1em 0.5em;
   margin: 0 .2em;
-  color: rgb(87, 85, 0);
+  color: rgb(193, 161, 92);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
@@ -284,12 +259,12 @@ main {
 }
 
 .site-navigation ul li a:hover {
-  border-bottom: 2px solid rgb(119, 117, 0);
-  color: rgb(158, 155, 0);
+  border-bottom: 2px solid rgb(248, 232, 199);
+  color: rgb(193, 161, 92);
 }
 
 .site-navigation ul li a.selected {
-  border-bottom: 2px solid rgb(87, 85, 0);
+  border-bottom: 2px solid rgb(241, 216, 160);
 }
 
 section {
@@ -298,15 +273,17 @@ section {
   display: grid;}
   /* place-items: center; } */
 
+
+/* HERO */
+
 .hero {
   text-align: center; 
   margin-top: -2em;
 }
 
 .hero img {
-  max-width: 50%;
+max-width: 75%;
 }
-
 
 .hero p {
   margin-right: auto; 
@@ -332,47 +309,57 @@ section {
   font-family: 'Unna', serif;
   text-align: center; 
   font-size: 4em;
+  color: rgb(183, 76, 70);
 }
 
 .hero h2 {
-  font-family: 'Nanum Gothic', sans-serif;
-  color: rgb(90, 0, 35);
-  font-size: 2em;
-  padding-top: -3em;
+  font-family: laca, sans-serif;
+  color: rgb(183, 76, 70);
+  font-size: 2.2em;
 }
 
 .hero p {
-  font-family: 'Signika', sans-serif;
+  font-family: 'Unna', serif;
   max-width: 30em;
+  padding-bottom: 2em;
 }
 
 .sketches h2 {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: laca, sans-serif;
   text-align: center;
-  color: rgb(90, 0, 35);
-  font-size: 2em;
+  color: rgb(183, 76, 70);
+  font-size: 2.2em;
+  padding-top: 2em;
 }
 
-.sketches h3 {
-  font-family: 'Nanum Gothic', sans-serif;
-  text-align: center;
-  color: rgb(90, 0, 35);
+.sketches h1 {
+  font-family: 'Unna', serif;
+  font-size: 1.3em;
   text-align: center;
 }
 
 .original h2 {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: laca, sans-serif;
   text-align: center;
-  color: rgb(90, 0, 35);
-  font-size: 2em;
+  color: rgb(183, 76, 70);
+  font-size: 2.2em;
   padding-top: 2em;
+  padding-bottom: 1em;
 }
 
 .final3 h2 {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: laca, sans-serif;
   text-align: center;
-  color: rgb(90, 0, 35);
-  font-size: 2em;
+  color: rgb(183, 76, 70);
+  font-size: 2.2em;
+  padding-top: 2em;
+}
+
+.final3 h1 {
+  font-family: 'Unna', serif;
+  font-size: 1.3em;
+  max-width: 35em;
+  margin: auto;
 }
 
 /* ANIMATION */

@@ -41,26 +41,47 @@
         <div class="container">
             <div class="hero">
                 <h1>Tailor Pack</h1>
-                    <img src="../img/tailorpack-box-02.jpg" alt="1">
-
-                <div class="row">
-                    <div class="one-third">
-                        <h2>OBJECTIVE</h2>
-                        <p>Create a brand that features a packaging element, printed article, and digital asset.
-                        </p>     
+                <div class="slideshow-container">
+                    <div class="mySlides fade" style="display: block;">
+                      <img src="../img/tailorpack-slide1.jpg">
+                    </div>
+                  
+                    <div class="mySlides fade">
+                        <img src="../img/tailorpack-slide2.jpg">
                     </div>
 
-                    <div class="two-thirds">
-                        <h2>RESULTS</h2>
-                        <p> Tailor Pack is an online service that specializes in crafting custom backpacks. 
-                            This project's deliverables includes a shipping box, hang tags, a brochure, and a UI design.
-                        </p>
+                    <div class="mySlides fade">
+                        <img src="../img/tailorpack-slide3.jpg">
                     </div>
+                  
                 </div>
+            
+                  <br>
+                  
+                  <div style="text-align:center">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                  </div>
+
+                    <div class="row">
+                        <div class="one-third column">
+                            <h2>OBJECTIVE</h2>
+                            <p>Create a brand that features a packaging element, printed article, and digital asset.
+                            </p>     
+                        </div>
+    
+                        <div class="one-half">
+                            <h2>RESULTS</h2>
+                            <p>Tailor Pack is an online service that specializes in crafting custom backpacks. 
+                                This project's deliverables includes a shipping box, hang tags, a brochure, and a UI design.
+                            </p>
+                        </div>
+                    </div>
             </div>
-            <div class="row">
-                <a class="button" href="https://xd.adobe.com/view/1ba4c286-09d8-42d1-55f3-f358048fc485-6d95/">VIEW UI DESIGN</a>   
-            </div>
+                <div class="row">
+                    <a class="button" href="https://xd.adobe.com/view/1ba4c286-09d8-42d1-55f3-f358048fc485-6d95/">VIEW UI DESIGN</a>   
+                </div>
         </div>
 
                 <section class="packaging">
@@ -84,11 +105,11 @@
                         <h2>BROCHURE</h2>
                         <div class="row">
                             <div class="one-half column">
-                                <h3>Open View</h3>
+                                <h3>Front View</h3>
                                 <img src="../img/tailorpack-brochure-front.jpg" alt="design">   
                             </div>
                             <div class="one-half column">
-                                <h3>Closed View</h3>
+                                <h3>Inside View</h3>
                                 <img src="../img/tailorpack-brochure-inside.jpg" alt="design"> 
                             </div>
                         </div>
@@ -164,5 +185,8 @@
     </footer>
 
 </body>
+
+<!-- MAIN JS -->
+<script src="js/script.js"></script>
 
 </html>

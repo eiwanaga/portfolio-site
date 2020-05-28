@@ -45,8 +45,15 @@ body {
     font-size: 87.5%; /* 14px */
     line-height: 1.4;
 }
-h1,h2,h3 { font-weight: normal; }
-p { max-width: 35em; }
+
+h1,h2,h3 { 
+  font-weight: normal; 
+}
+
+p { 
+  max-width: 35em;
+  font-size: 1.2em;
+}
 
 @media (min-width: 768px) {
   p.two-col {
@@ -66,7 +73,7 @@ a { text-decoration: none;}
     color: rgb(183, 76, 70);
 }
 .subheadline {
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 300;
     line-height: 1;
     margin: 0 0 .6em 0;
@@ -88,7 +95,7 @@ img.circular {
 }
 
 .button {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: laca, sans-serif;
   display: inline-block;
   border-radius: 2em;
   padding: 1em 2em;
@@ -195,16 +202,6 @@ main {
   margin: 0 auto;
 }
 
-/* HERO */
-/* .hero {
-  text-align: center;
-  background-image: url('../img/color-tiles.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 6em 1em;
-  margin: 2em 0;
-} */
-
 
 /* BESPOKE GRID SYSTEM */
 
@@ -237,7 +234,7 @@ main {
 
 .site-header,
   .site-footer {
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: laca, sans-serif;
     text-align: center;
     margin: 1em 0;
     padding-bottom: 1em;
@@ -355,7 +352,7 @@ section {
   margin: 0;
 }
 
-.hero .row{
+.hero .row {
   margin-top:1em; 
   display: flex;
   align-items: flex-start;
@@ -371,7 +368,7 @@ section {
 
 .hero h2 {
   font-family: 'Nanum Gothic', sans-serif;
-  color: rgb(193, 161, 92);
+  color: rgb(183, 76, 70);
   font-size: 2em;
   padding-top: -3em;
 }
