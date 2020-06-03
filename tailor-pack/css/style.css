@@ -356,6 +356,20 @@ max-width: 75%;
   text-align: center;
 }
 
+.tags h2 {
+  font-family: laca, sans-serif;
+  text-align: center;
+  color: rgb(183, 76, 70);
+  font-size: 2.2em;
+  padding-top: 5em;
+  padding-bottom: 1em;
+}
+
+.tags img {
+max-width: 60%;
+}
+
+
 .assets h2 {
   font-family: laca, sans-serif;
   text-align: center;
